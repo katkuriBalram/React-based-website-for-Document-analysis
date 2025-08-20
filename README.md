@@ -26,30 +26,13 @@ It allows users to upload documents (PDFs, images, etc.), extract text using OCR
 
 ---
 
-## 📂 Project Structure
-```
-Major_project/
-│── backend/                 # FastAPI backend
-│   ├── main.py               # API entrypoint
-│   ├── requirements.txt      # Python dependencies
-│   └── ...                   # Other backend files
-│
-│── frontend/                # React frontend
-│   ├── src/                  # Components, pages, utils
-│   ├── package.json          # Frontend dependencies
-│   └── ...                   # Other frontend files
-│
-│── README.md                # Project documentation
-```
-
----
 
 ## ⚙️ Installation & Setup
 
 ### 🔹 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/katkuriBalram/React-based-website-for-Document-analysis.git
+cd React-based-website-for-Document-analysis
 ```
 
 ### 🔹 2. Backend Setup (FastAPI)
@@ -77,20 +60,8 @@ Frontend will start at: **http://localhost:3000**
 
 ## 📌 API Endpoints
 - `POST /analyze_document/` → Upload & analyze documents  
-- `POST /summarize/` → Summarize extracted content  
-- `POST /translate/` → Translate document text  
-- `GET /chat/` → Query document via chatbot  
+- `POST/chat/` → Query document via chatbot  
 
----
-
-## 🖼️ Screenshots / Demo
-(Add your screenshots or demo video links here)
-
----
-
-## 👨‍💻 Author
-- **Your Name**  
-- GitHub: [your-username](https://github.com/your-username)
 
 ---
 

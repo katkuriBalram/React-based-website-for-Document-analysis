@@ -18,32 +18,35 @@ This project is a web-based application designed for intelligent document analys
 ---
 
 ## 🏗️ Tech Stack
-
-This project is built with a decoupled architecture, using a Python-based backend for AI processing and a modern React frontend for the user interface.
-
-### Frontend
-
-* **Framework**: React (with Vite)
-* **Language**: TypeScript
-* **Styling**: Tailwind CSS, Shadcn/UI
-* **State Management**: TanStack Query (for data fetching)
-* **Routing**: React Router DOM
-
-### Backend
-
-* **Framework**: FastAPI
-* **Language**: Python
-* **AI/ML**: Google Generative AI (Gemini 1.5 Flash Vision model)
-* **Image Processing**: Pillow (PIL)
+- **Frontend**: React, TypeScript, Tailwind CSS  
+- **Backend**: FastAPI (Python)  
+- **Database**: MongoDB  
+- **AI/ML**: OCR (pytesseract), Google Generative AI / LLMs  
+- **Other Tools**: pdf2image, OpenAI/OpenRouter API (optional)
 
 ---
 
-## ⚙️ Installation and Setup
+## 📂 Project Structure
+```
+Major_project/
+│── backend/                 # FastAPI backend
+│   ├── main.py               # API entrypoint
+│   ├── requirements.txt      # Python dependencies
+│   └── ...                   # Other backend files
+│
+│── frontend/                # React frontend
+│   ├── src/                  # Components, pages, utils
+│   ├── package.json          # Frontend dependencies
+│   └── ...                   # Other frontend files
+│
+│── README.md                # Project documentation
+```
 
-To get a local copy of this project running, follow these steps. The entire project is contained in a single directory.
+---
 
-### 1. Clone the Repository
+## ⚙️ Installation & Setup
 
+### 🔹 1. Clone the Repository
 ```bash
 git clone https://github.com/katkuriBalram/React-based-website-for-Document-analysis.git
 cd React-based-website-for-Document-analysis
@@ -95,11 +98,21 @@ The React frontend will run at: [http://localhost:5173](http://localhost:5173)
 ---
 
 ## 📌 API Endpoints
+- `POST /analyze_document/` → Upload & analyze documents  
+- `POST /summarize/` → Summarize extracted content  
+- `POST /translate/` → Translate document text  
+- `GET /chat/` → Query document via chatbot  
 
-The FastAPI backend exposes the following endpoints:
+---
 
-* **POST /analyze\_document/** — Accepts a document image (`multipart/form-data`) and returns a JSON object containing the full analysis.
-* **POST /chat/** — Takes a user message and the document context, then returns a natural language response from the AI.
+## 🖼️ Screenshots / Demo
+(Add your screenshots or demo video links here)
+
+---
+
+## 👨‍💻 Author
+- **Your Name**  
+- GitHub: [your-username](https://github.com/your-username)
 
 ---
 

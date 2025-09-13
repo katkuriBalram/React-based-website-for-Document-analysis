@@ -67,7 +67,7 @@ async def analyze_document(file: UploadFile = File(...)):
 
 
 # === CONFIG ===
-GEMINI_API_KEY = ""  # Replace with your actual key
+GEMINI_API_KEY = "AIzaSyAQtqr6t6FynIriiXFrEv6hRpE6fuXlUk8"  # Replace with your actual key
 genai.configure(api_key=GEMINI_API_KEY)
 vision_model = genai.GenerativeModel("gemini-1.5-flash")  # Vision-enabled model
 
